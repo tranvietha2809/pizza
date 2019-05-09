@@ -1,0 +1,16 @@
+[
+    {
+      "model": "ordering.BaseID",
+      "pk": 1,
+      "fields": {
+        "base": "regular"
+      }
+    },
+    {
+      "model": "ordering.BaseID",
+      "pk": 2,
+      "fields": {
+        "base": "sicilian"
+      }
+    }
+  ]

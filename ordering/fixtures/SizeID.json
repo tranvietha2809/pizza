@@ -1,0 +1,16 @@
+[
+    {
+      "model": "ordering.SizeID",
+      "pk": 1,
+      "fields": {
+        "size": "small"
+      }
+    },
+    {
+      "model": "ordering.SizeID",
+      "pk": 2,
+      "fields": {
+        "size": "large"
+      }
+    }
+  ]

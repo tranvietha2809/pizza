@@ -1,0 +1,21 @@
+{% extends "base/base.html" %}
+{% load staticfiles %}
+
+{% block css %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/ordering/subs/subs.css' %}"/>
+{% endblock %}
+{% block body %}
+<h1>Make your subs</h1>
+<form action= "{% url 'ordering:add_subs' %}" method = "post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="button" id="get_subs_price" > Get Price</button>
+    <input type="submit" value="Add to cart!"/>
+    </form>
+    <p id='price'></p>
+{% endblock %}
+
+{% block scripts %}
+    <script src="{% static 'js/ordering/subs/subs.js' %}"></script>
+{% endblock %}
+

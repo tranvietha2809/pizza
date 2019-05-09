@@ -1,0 +1,7 @@
+{% extends "base/base.html" %}
+
+{% block body %}
+<h1>Hello {{user}}</h1>
+<h2>What would you like to order?</h2>
+<a href="{% url 'ordering:pizza' %}">Click</a>
+{% endblock %}

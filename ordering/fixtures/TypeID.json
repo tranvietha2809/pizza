@@ -1,0 +1,37 @@
+[
+    {
+      "model": "ordering.TypeID",
+      "pk": 1,
+      "fields": {
+        "type": "cheese"
+      }
+    },
+    {
+      "model": "ordering.TypeID",
+      "pk": 2,
+      "fields": {
+        "type": "one topping"
+      }
+    },
+    {
+        "model": "ordering.TypeID",
+        "pk": 3,
+        "fields": {
+          "type": "two topping"
+        }
+    },
+    {
+        "model": "ordering.TypeID",
+        "pk": 4,
+        "fields": {
+          "type": "three topping"
+        }
+    },
+    {
+        "model": "ordering.TypeID",
+        "pk": 5,
+        "fields": {
+          "type": "special"
+        }
+    }
+  ]

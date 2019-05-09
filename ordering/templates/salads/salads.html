@@ -1,0 +1,20 @@
+{% extends "base/base.html" %}
+{% load staticfiles %}
+
+{% block css %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/ordering/salads/salads.css' %}"/>
+{% endblock %}
+{% block body %}
+<h1>Make your pizza</h1>
+<form action= "{% url 'ordering:add_salads' %}" method = "post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="button" id="get_salads_price" > Get Price</button>
+    <input type="submit" value="Add to cart!"/>
+    </form>
+    <p id='price'></p>
+{% endblock %}
+
+{% block scripts %}
+    <script src="{% static 'js/ordering/salads/salads.js' %}"></script>
+{% endblock %}
